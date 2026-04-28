@@ -1,6 +1,6 @@
 class Persona:
-    # _nombre = ""
-    # _edad = 0
+    # _nombre = "Angie Xiomara"
+    # _edad = 24
 
     # protegemos el atributo edad para que solo 
     # se pueda modificar a través de métodos de 
