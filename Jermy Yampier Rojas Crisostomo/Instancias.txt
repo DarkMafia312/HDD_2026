@@ -1,0 +1,16 @@
+from clase_persona import Persona
+from clase_estudiante import Estudiante
+
+persona = Persona("Fernando Antonio", 20)
+print(persona)
+persona.nombre = "Fernando Antonio"
+persona.edad = 20
+print(persona)
+
+estudiante = Estudiante("Fernando Antonio", 20, "Herramientas de Desarrollo", "UTP")
+print(estudiante)
+estudiante.nombre = "Fernando Antonio"
+estudiante.edad = 20
+estudiante.curso = "Herramientas de Desarrollo"
+estudiante.universidad = "UTP"
+print(estudiante)
