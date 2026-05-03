@@ -1,5 +1,5 @@
 class Persona:
-    # _nombre = "Fernando Antonio"
+    # _nombre = "Angie Viera Vite"
     # _edad = 21
 
     # protegemos el atributo edad para que solo 
