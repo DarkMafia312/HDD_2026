@@ -1,10 +1,8 @@
 class Persona:
-    # _nombre = "Fernando Antonio"
-    # _edad = 21
+    # _nombre = "Ivan Antonio"
+    # _edad = 24
 
-    # protegemos el atributo edad para que solo 
-    # se pueda modificar a traves de metodos de 
-    # la clase.
+    # Se protege el atributo para que solo pueda ser usado aqui
     @property
     def nombre(self):
         return self.__nombre
@@ -12,7 +10,7 @@ class Persona:
     @nombre.setter
     def nombre(self, valor):
         if len(valor) > 0:
-            self.__nombre = valor
+            self.__nombre = 
         else:
             raise ValueError("Nombre no valido")
 
