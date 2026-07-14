@@ -1,0 +1,21 @@
+from clase_persona import Persona
+from clase_estudiante import Estudiante
+
+print("--- Pruebas con la clase Persona (Programador 3) ---")
+persona = Persona("Programador 3", 21)
+print(f"Instancia inicial: {persona}")
+
+persona.nombre = "Programador 3 Modificado"
+persona.edad = 22
+print(f"Instancia modificada: {persona}\n")
+
+
+print("--- Pruebas con la clase Estudiante (Programador 3) ---")
+estudiante = Estudiante("Programador 3", 21, "Herramientas de Desarrollo", "UTP")
+print(f"Instancia inicial: {estudiante}")
+
+estudiante.nombre = "Programador 3 Frontend"
+estudiante.edad = 21
+estudiante.curso = "Diseño de Interfaces"
+estudiante.universidad = "UTP"
+print(f"Instancia modificada: {estudiante}")

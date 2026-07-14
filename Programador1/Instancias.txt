@@ -1,16 +1,21 @@
 from clase_persona import Persona
 from clase_estudiante import Estudiante
 
-persona = Persona("Alisson Claire", 22)
-print(persona)
-persona.nombre = "Alisson Claire"
-persona.edad = 22
-print(persona)
+print("--- Pruebas con la clase Persona (Programador 1) ---")
+persona = Persona("Programador 1", 25)
+print(f"Instancia inicial: {persona}")
 
-estudiante = Estudiante("Alisson Claire", 22, "Herramientas de Desarrollo", "UTP")
-print(estudiante)
-estudiante.nombre = "Alisson Claire"
-estudiante.edad = 22
-estudiante.curso = "Herramientas de Desarrollo"
+persona.nombre = "Programador 1 Modificado"
+persona.edad = 26
+print(f"Instancia modificada: {persona}\n")
+
+
+print("--- Pruebas con la clase Estudiante (Programador 1) ---")
+estudiante = Estudiante("Programador 1", 25, "Herramientas de Desarrollo", "UTP")
+print(f"Instancia inicial: {estudiante}")
+
+estudiante.nombre = "Programador 1 Líder"
+estudiante.edad = 26
+estudiante.curso = "Arquitectura de Software"
 estudiante.universidad = "UTP"
-print(estudiante)
+print(f"Instancia modificada: {estudiante}")

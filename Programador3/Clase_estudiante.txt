@@ -11,5 +11,5 @@ class Estudiante(Persona):
         return f"{super().__str__()} - {self.curso} - {self.universidad}"
 
 # Ejemplo de prueba:
-# estudiante1 = Estudiante("Programador 1", 25, "Herramientas de Desarrollo", "UTP")
+# estudiante1 = Estudiante("Programador 3", 21, "Herramientas de Desarrollo", "UTP")
 # print(estudiante1)
