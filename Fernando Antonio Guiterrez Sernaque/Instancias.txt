@@ -1,31 +1,23 @@
 from clase_persona import Persona
 from clase_estudiante import Estudiante
 
-print("--- Pruebas con la clase Persona ---")
-# Creación inicial de la instancia Persona
-persona = Persona("Fernando Antonio", 21)
-print(f"Instancia inicial: {persona}")
+print("--- Ejecución en Rama: fernando_gutierrez ---")
+# Instancia de Persona inicial
+persona = Persona("Fernando Gutierrez", 22)
+print(f"Instancia Persona: {persona}")
 
-# Modificación de atributos usando los setters
-persona.nombre = "Fernando Antonio Gutiérrez"
-persona.edad = 22
-print(f"Instancia modificada: {persona}\n")
+# Modificación de tus datos
+persona.nombre = "Fernando Antonio Gutierrez Sernaque"
+persona.edad = 23
+print(f"Instancia Persona Modificada: {persona}\n")
 
+# Instancia de Estudiante inicial
+estudiante = Estudiante("Fernando Antonio Gutierrez Sernaque", 22, "Herramientas de Desarrollo", "UTP")
+print(f"Instancia Estudiante: {estudiante}")
 
-print("--- Pruebas con la clase Estudiante ---")
-# Creación inicial de la instancia Estudiante
-estudiante = Estudiante("Fernando Antonio", 20, "Lenguajes de Programación", "UTP")
-print(f"Instancia inicial: {estudiante}")
-
-# Modificación de atributos heredados y propios
-estudiante.nombre = "Fernando Antonio"
-estudiante.edad = 21  # Cambio de edad
-estudiante.curso = "Estructuras de Datos"  # Cambio de curso
+# Modificación con tu curso preferido
+estudiante.nombre = "Fernando Antonio Gutierrez Sernaque"
+estudiante.edad = 23
+estudiante.curso = "Arquitectura de Plataformas Web"
 estudiante.universidad = "UTP"
-print(f"Instancia modificada: {estudiante}")
-
-# Ejemplo opcional para comprobar que las validaciones funcionan:
-# try:
-#     persona.edad = -5  # Esto debería lanzar un ValueError
-# except ValueError as e:
-#     print(f"\n[Validación Correcta] Error capturado: {e}")
+print(f"Instancia Estudiante Modificada: {estudiante}")
