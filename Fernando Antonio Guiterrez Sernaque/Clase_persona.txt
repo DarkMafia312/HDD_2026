@@ -1,21 +1,24 @@
 class Persona:
-    # _nombre = "Fernando Antonio"
-    # _edad = 21
 
-    # protegemos el atributo edad para que solo 
-    # se pueda modificar a traves de metodos de 
-    # la clase.
+    # Constructor
+    def __init__(self, nombre, edad):
+        # Usamos los setters para asegurar que las validaciones se ejecuten al crear el objeto
+        self.nombre = nombre
+        self.edad = edad
+
+    # Propiedad y Setter para Nombre
     @property
     def nombre(self):
         return self.__nombre
 
     @nombre.setter
     def nombre(self, valor):
-        if len(valor) > 0:
+        if len(valor.strip()) > 0:  # strip() evita que se guarden nombres que solo tengan espacios
             self.__nombre = valor
         else:
-            raise ValueError("Nombre no valido")
+            raise ValueError("Nombre no válido")
 
+    # Propiedad y Setter para Edad
     @property
     def edad(self):
         return self.__edad
@@ -26,11 +29,6 @@ class Persona:
             self.__edad = valor
         else:
             raise ValueError("La edad debe ser positiva")
-
-    # constructor
-    def __init__(self, nombre, edad):
-        self.__nombre = nombre
-        self.__edad = edad
 
     def __str__(self):
         return f"{self.__nombre} ({self.__edad})"
