@@ -1,25 +1,19 @@
 from clase_persona import Persona
 from clase_estudiante import Estudiante
 
-print("--- Pruebas con la clase Persona ---")
-# Creación inicial de la instancia Persona
-persona = Persona("Jeremy Rojas", 21)
-print(f"Instancia inicial: {persona}")
+print("--- Ejecución Local: Carpeta JeremyRojas ---")
+persona = Persona("Jeremy Rojas", 20)
+print(f"Instancia Persona: {persona}")
 
-# Modificación usando setters con su nombre completo
 persona.nombre = "Jeremy Yampier Rojas Crisostomo"
-persona.edad = 22
-print(f"Instancia modificada: {persona}\n")
+persona.edad = 21
+print(f"Instancia Persona Modificada: {persona}\n")
 
+estudiante = Estudiante("Jeremy Yampier Rojas Crisostomo", 20, "Herramientas de Desarrollo", "UTP")
+print(f"Instancia Estudiante: {estudiante}")
 
-print("--- Pruebas con la clase Estudiante ---")
-# Creación inicial de la instancia Estudiante
-estudiante = Estudiante("Jeremy Yampier Rojas Crisostomo", 21, "Herramientas de Desarrollo", "UTP")
-print(f"Instancia inicial: {estudiante}")
-
-# Modificación de atributos propios y heredados
 estudiante.nombre = "Jeremy Yampier Rojas Crisostomo"
-estudiante.edad = 22  # Cambio de edad
-estudiante.curso = "Base de Datos"  # Cambio de curso
+estudiante.edad = 20
+estudiante.curso = "Estructura de Datos"
 estudiante.universidad = "UTP"
-print(f"Instancia modificada: {estudiante}")
+print(f"Instancia Estudiante Modificada: {estudiante}")
