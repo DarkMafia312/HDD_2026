@@ -10,6 +10,6 @@ class Estudiante(Persona):
     def __str__(self):
         return f"{super().__str__()} - {self.curso} - {self.universidad}"
 
-# Ejemplo de prueba (puedes descomentarlo para probar):
-# estudiante1 = Estudiante("Fernando Antonio", 21, "Lenguajes de Programación", "UTP")
+# Ejemplo de prueba de Fernando:
+# estudiante1 = Estudiante("Fernando Antonio Gutierrez Sernaque", 22, "Herramientas de Desarrollo", "UTP")
 # print(estudiante1)
