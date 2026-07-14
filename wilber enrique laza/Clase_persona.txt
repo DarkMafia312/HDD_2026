@@ -2,23 +2,20 @@ class Persona:
 
     # Constructor
     def __init__(self, nombre, edad):
-        # Usamos los setters para asegurar que las validaciones se ejecuten al crear el objeto
         self.nombre = nombre
         self.edad = edad
 
-    # Propiedad y Setter para Nombre
     @property
     def nombre(self):
         return self.__nombre
 
     @nombre.setter
     def nombre(self, valor):
-        if len(valor.strip()) > 0:  # Evita nombres vacíos o con puros espacios
+        if len(valor.strip()) > 0:
             self.__nombre = valor
         else:
             raise ValueError("Nombre no válido")
 
-    # Propiedad y Setter para Edad
     @property
     def edad(self):
         return self.__edad
